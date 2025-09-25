@@ -1,0 +1,137 @@
+header {
+  background: #1e3a8a;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: NSimSun;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-left: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* محرك البحث */
+.search-form {
+  display: flex;
+  gap: 5px;
+}
+.search-form input {
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.search-form button {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #ffd700;
+  cursor: pointer;
+  font-weight: bold;
+}
+.search-form button:hover {
+  background: #ffcc00;
+}
+
+h1 {
+  background-color: rgba(0, 85, 255, 0.44);
+  border: solid 10px rgba(12, 41, 94, 0.404);
+  border-radius: 30px;
+  width: 250px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#foto1 {
+  border-radius: 100px 300px 100px 300px;
+  border: solid 5px rgb(74, 122, 89);
+  display: block;
+  margin: 20px auto;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.card {
+  width: 260px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+.card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+.video-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.video-box video {
+  width: 400px;   
+  height: auto;
+  border-radius: 10px;
+}
+
+.video-note {
+  max-width: 300px;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}

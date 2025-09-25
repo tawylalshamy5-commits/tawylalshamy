@@ -1,0 +1,116 @@
+/* تنسيق الرأس */
+header {
+  background: #1e3a8a;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1); 
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: NSimSun, Tahoma, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-left: 25px;
+  border: solid 2px rgba(17, 42, 116, 0.288);
+  border-radius: 60px;
+  padding: 5px 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* بانر */
+img {
+  width: 100%;
+  height: auto; 
+  display: block;
+  margin: 0 auto;
+}
+
+/* عنوان الدورات على اليمين */
+h1 {
+  background-color: #0055ff71;
+  border: solid 5px rgba(12, 41, 94, 0.404);
+  border-radius: 30px;
+  width: fit-content;
+  text-align: right;
+  margin: 40px 0 40px auto;
+  padding: 10px 20px;
+}
+
+/* نصوص الدورات بدون صناديق */
+#oo {
+  text-align: right;
+  padding: 20px;
+  direction: rtl;
+}
+
+#oo h2 {
+  margin-bottom: 5px;
+}
+
+#oo p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* تجاوب الشاشات */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  nav li {
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 20px auto;
+    float: none;
+    text-align: right;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}
