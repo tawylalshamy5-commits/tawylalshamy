@@ -1,42 +1,77 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NEW Horizons</title>
-  <link rel="stylesheet" href="css/LANG1.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تواصل مع أخي</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  button {
+    background: #1e90ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  button:hover {
+    background: #0f78d1;
+  }
+</style>
 </head>
 <body>
 
-  <!-- رأس الموقع -->
-  <header>
-    <div class="logo">institute new Horizons</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">الصفحة</a></li>
-        <li><a href="index2.html">عن المعهد</a></li>
-        <li><a href="index3.html">الدورات</a></li>
-      </ul>
-    </nav>
-  </header>
+<div class="container">
+  <h1>ارقام التواصل</h1>
+  <button id="whatsappBtn">واتساب</button>
+  <button id="telegramBtn">تلجرام</button>
+  <button id="phoneBtn">رقم الهاتف</button>
+</div>
 
-  <!-- بانر -->
-  <img src="image/2.jpg" alt="banner">
+<script>
+const whatsappBtn = document.getElementById('whatsappBtn');
+const telegramBtn = document.getElementById('telegramBtn');
+const phoneBtn = document.getElementById('phoneBtn');
 
-  <!-- عنوان الدورات -->
-  <h1>الدورات الحالية</h1>
+const phoneNumber = '777733412'; // رقم أخيك
 
-  <!-- نصوص الدورات بدون صناديق -->
-  <div id="oo">
-    <h2>اساسيات الحاسوب</h2>
-    <p>تعلم استخدام الاكسل من الصفر حتى الاحتراف، على أيدي معلمين راقين ومتميزين في الأداء.</p>
+whatsappBtn.addEventListener('click', () => {
+  window.open(`https://wa.me/${phoneNumber}`, '_blank');
+  whatsappBtn.style.display = 'none';
+});
 
-    <h2>دورة المحاسبة</h2>
-    <p>تحسين مهارات الأداء العلمي والمحاسبة التجارية عبر طرق تفاعلية متطورة.</p>
+telegramBtn.addEventListener('click', () => {
+  window.open(`https://t.me/${phoneNumber}`, '_blank');
+  telegramBtn.style.display = 'none';
+});
 
-    <h2>دورة الفوتوشوب</h2>
-    <p>تعلم التخطيط والإبداع في التصميم عبر دورات تدريبية متميزة بالفوتوشوب.</p>
-  </div>
+phoneBtn.addEventListener('click', () => {
+  navigator.clipboard.writeText(phoneNumber).then(() => {
+    alert('تم نسخ الرقم!');
+  });
+  phoneBtn.style.display = 'none';
+});
+</script>
 
 </body>
 </html>
